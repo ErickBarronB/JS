@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Clase6/Estilos.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+<div class="mainContenedor">
+    <h1> CALCULE SU PESO, CALORIAS, IMC. </h1>
+</div>
+
+<section>
+    <div class="sectionArticulo">
+        <h3>INGRESE SUS DATOS ABAJO</h3>
+        <form action="" class="formularioCalculos">
+            <ul style="list-style: none;" class="listaCalculos">
+                <li>
+                    <label for="Peso">Peso:</label>
+                    <input type="number" name="Peso" id="Peso" placeholder="kg">
+                </li>
+                <li>
+                    <label for="Altura">Altura:</label>
+                    <input type="number" name="Altura" id="Altura" placeholder="cm">
+                </li>
+                <li>
+                    <label for="Nivel de Actividad"><h5>Su nivel de Actividad</h5></label>
+                    <select name="Nivel de Actividad" id="Actividad">
+                        <option value="Sedentario">Sedentario</option>
+                        <option value="Bajo">Bajo</option>
+                        <option value="Moderado">Moderado</option>
+                        <option value="Alto">Alto</option>
+                    </select>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="sectionArticuloResultados">
+        <h4>SU RESULTADO</h4>
+        <div>
+            <input type="number" placeholder="IMC" disabled> <br>
+            <input type="number" placeholder="CALORIAS PARA MANTENER" disabled>
+        </div>
+    </div>
+
+
+</section>
+
+</body>
+
+
+<script src="./index.js"></script>
+</html>

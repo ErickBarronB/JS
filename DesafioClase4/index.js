@@ -1,0 +1,33 @@
+/* let peso = prompt("Ingrese su peso");
+let altura = prompt("Ingrese su Altura"); */
+
+let peso = 70
+let altura = 1.68
+let sexo = "mujer"
+let edad = 20
+let actividadBaja = 0.27
+
+
+const calcularIMC = (peso, altura) => {
+    return peso / Math.pow(altura, 2);
+}
+
+console.log(calcularIMC(peso, altura));
+
+const calcularCaloriasBMR = (peso, edad, altura, sexo) => {
+    if (sexo == "hombre") {
+        return 66.5 + (13.75*parseInt(peso) + (5.003*(altura*100)) - (6.75*edad))
+    }
+    else if (sexo == "mujer") {
+        return 655.1 + (9.563*parseInt(peso) + (1.850*(altura*100)) - (4.676*edad))
+    }
+}
+
+let resultadoBMR = (calcularCaloriasBMR(peso, edad, altura, sexo));
+console.log(resultadoBMR)
+
+const calcularTDEE = (resultadoBMR, actividadBaja) => {
+    return resultadoBMR + (resultadoBMR*actividadBaja);
+}
+
+console.log(calcularTDEE(resultadoBMR, actividadBaja));
