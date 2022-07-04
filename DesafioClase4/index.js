@@ -12,7 +12,7 @@ const calcularIMC = (peso, altura) => {
     return peso / Math.pow(altura, 2);
 }
 
-console.log(calcularIMC(peso, altura));
+
 
 const calcularCaloriasBMR = (peso, edad, altura, sexo) => {
     if (sexo == "hombre") {
@@ -24,10 +24,12 @@ const calcularCaloriasBMR = (peso, edad, altura, sexo) => {
 }
 
 let resultadoBMR = (calcularCaloriasBMR(peso, edad, altura, sexo));
-console.log(resultadoBMR)
+
 
 const calcularTDEE = (resultadoBMR, actividadBaja) => {
     return resultadoBMR + (resultadoBMR*actividadBaja);
 }
 
+console.log(calcularIMC(peso, altura));
+console.log(resultadoBMR)
 console.log(calcularTDEE(resultadoBMR, actividadBaja));

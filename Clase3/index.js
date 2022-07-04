@@ -52,7 +52,7 @@ do {
     console.log("holi");
 } while(repetir); */
 
-var numero = prompt("Imgrese un numero del 1 al 10 para saber su tabla de multiplos");
+/* var numero = prompt("Imgrese un numero del 1 al 10 para saber su tabla de multiplos");
 
 while ((numero < 10) && (numero != "") ) {
     for (let i = 0; i <= 15; i++) {
@@ -67,3 +67,4 @@ while ((numero < 10) && (numero != "") ) {
         }
     }
 }
+ */
